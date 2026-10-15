@@ -45,7 +45,7 @@ with open(css_path, "r", encoding="utf-8") as css_file:
         f"<style>{css_file.read()}</style>",
         unsafe_allow_html=True
     )
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://krishimitra-ai-lw7w.onrender.com"
 farms = []
 
 try:
