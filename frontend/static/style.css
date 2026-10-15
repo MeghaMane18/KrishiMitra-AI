@@ -1,0 +1,196 @@
+/* KrishiMitra AI — Premium Farm Theme */
+
+:root {
+    --forest: #193D2D;
+    --forest-light: #28563D;
+    --cream: #F7F4E9;
+    --gold: #E7BD58;
+    --text: #26372B;
+    --muted: #788579;
+    --border: #E7E4D8;
+}
+
+.stApp {
+    background: var(--cream);
+    color: var(--text);
+}
+
+.block-container {
+    max-width: 1500px;
+    padding: 2rem 2.5rem 3rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: var(--forest);
+    border-right: none;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #F8F5E9;
+}
+
+section[data-testid="stSidebar"] hr {
+    border-color: #41634D;
+}
+
+/* Sidebar navigation */
+section[data-testid="stSidebar"] div[role="radiogroup"] {
+    gap: 8px;
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] label {
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] label:hover {
+    background: var(--forest-light);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--forest) !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.4px;
+}
+
+h1 {
+    font-size: 2.2rem !important;
+}
+
+/* Buttons */
+.stButton > button,
+.stFormSubmitButton > button {
+    background: var(--forest);
+    color: white;
+    border: 1px solid var(--forest);
+    border-radius: 10px;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: var(--forest-light);
+    border-color: var(--gold);
+    color: white;
+}
+
+/* Input fields */
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input {
+    border-radius: 9px;
+    background: white;
+    border-color: var(--border);
+}
+
+/* Form containers */
+div[data-testid="stForm"] {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+/* Statistics cards */
+div[data-testid="stMetric"] {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(25, 61, 45, 0.06);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: var(--muted);
+}
+
+div[data-testid="stMetricValue"] {
+    color: var(--forest);
+    font-weight: 750;
+}
+
+/* Tables and separators */
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+hr {
+    border-color: var(--border);
+}
+/* Fix text visibility in form fields */
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"] {
+    background-color: #ffffff !important;
+    color: #26382b !important;
+    border: 1px solid #cbd5c0 !important;
+}
+
+/* Make form labels visible */
+.stTextInput label,
+.stNumberInput label,
+.stDateInput label,
+.stTextArea label,
+.stSelectbox label,
+.stRadio label,
+.stCheckbox label {
+    color: #26382b !important;
+}
+
+/* Fix placeholder visibility */
+.stTextInput input::placeholder,
+.stNumberInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #777777 !important;
+    opacity: 1 !important;
+}
+
+/* Fix text inside dropdowns */
+.stSelectbox div[data-baseweb="select"] * {
+    color: #26382b !important;
+}
+
+/* Fix general form text */
+[data-testid="stForm"] {
+    color: #26382b !important;
+}
+
+/* AI Farming Assistant - Chat readability */
+
+.stChatMessage {
+    color: #1f2937 !important;
+}
+
+.stChatMessage p,
+.stChatMessage div,
+.stChatMessage span,
+.stChatMessage li {
+    color: #1f2937 !important;
+}
+
+/* Chat message cards */
+.stChatMessage [data-testid="stMarkdownContainer"] {
+    color: #1f2937 !important;
+}
+
+/* Text input */
+.stChatInput textarea {
+    color: #1f2937 !important;
+    background-color: #ffffff !important;
+    caret-color: #1f2937 !important;
+}
+
+/* Placeholder text */
+.stChatInput textarea::placeholder {
+    color: #6b7280 !important;
+    opacity: 1 !important;
+}
