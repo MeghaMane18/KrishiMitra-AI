@@ -1,7 +1,17 @@
+
+from pathlib import Path
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-DATABASE_URL = "sqlite:///./database/krishimitra.db"
+# Get the main project folder
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Create database folder if it doesn't exist
+DATABASE_DIR = BASE_DIR / "database"
+DATABASE_DIR.mkdir(parents=True, exist_ok=True)
+
+DATABASE_URL = f"sqlite:///{(DATABASE_DIR / 'krishimitra.db').as_posix()}"
 
 engine = create_engine(
     DATABASE_URL,
@@ -15,6 +25,8 @@ SessionLocal = sessionmaker(
 )
 
 Base = declarative_base()
+
+
 def get_db():
     db = SessionLocal()
     try:
